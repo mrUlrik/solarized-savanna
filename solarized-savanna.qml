@@ -109,6 +109,8 @@ Rectangle { // Full Window
             anchors.horizontalCenterOffset: -15
             anchors.top: loginHeader.bottom
             anchors.topMargin: 15
+            font.family: "Verdana"
+            font.pointSize: 13
             placeholderText: "username"
             style: TextFieldStyle  {
                 padding.left: 10
@@ -127,6 +129,9 @@ Rectangle { // Full Window
             height: 26
             anchors.top: userField.bottom
             anchors.topMargin: 10
+            font.family: "Verdana"
+            font.pointSize: 13
+            echoMode: 2
             placeholderText: "password"
             style: TextFieldStyle {
                 padding.left: 10
@@ -140,17 +145,15 @@ Rectangle { // Full Window
         }
         Button {
             id: loginButton
-            width: 20
-            height: 62
-            isDefault: true
-            text: ">"
-            anchors.left: userField.right
+            width: 10
+            height: 26
+            anchors.left: passField.right
             anchors.leftMargin: 10
-            anchors.top: userField.top
+            anchors.top: passField.top
+            isDefault: true
             style: ButtonStyle {
-                background: Rectangle {
-                    border.width: 0
-                    color: "#EEE8D5"
+                background: Image {
+                    source: "images/login.png"
                 }
             }
         }
@@ -163,10 +166,14 @@ Rectangle { // Full Window
             anchors.right: userField.right
             model: ["KDE Plasma","Something Else"]
             style: ComboBoxStyle {
+                selectionColor: "#657B83"
+                selectedTextColor: "#073642"
                 textColor: "#93A1A1"
+                font.family: "Verdana"
+                font.pointSize: 8
                 background: Rectangle {
                     border.width: 0
-                    color: "#EEE8D5"
+                    color: "#073642"
                 }
             }
         }
