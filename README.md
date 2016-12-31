@@ -9,10 +9,7 @@ The font used, and included, is licensed from Nymphont (http://www.nymfont.com/)
 Power, reboot, and stand-by buttons were provided by dAKirby309 (http://dakirby309.deviantart.com/)
 
 ## Screenshot
-
-```
-![screenshot](images/screenshot.png)
-```
+![Screenshot](https://github.com/mrUlrik/solarized-savanna/raw/master/images/screenshot.png)
 
 ##Other Interesting Information
 I wasn’t pleased with the login screens available and wanted to finally get my feet wet in creating my first repository. I’ll be creating a Gentoo build package for it soon.
